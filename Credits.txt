@@ -1,0 +1,11 @@
+Photo by Pixabay from Pexels: https://www.pexels.com/photo/html-code-270366/ (Main page image)
+
+Logos for coding stuff: https://www.pngegg.com
+
+Sources:
+Birth of the web
+https://home.cern/science/computing/birth-web/short-history-web#:~:text=Where%20the%20Web%20was%20born,and%20institutes%20around%20the%20world.
+
+Harvard Lecture 0 Notes:
+https://cs50.harvard.edu/x/2024/notes/0/
+

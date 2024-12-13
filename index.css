@@ -1,0 +1,201 @@
+/* Styles and colors */
+:root {
+    --white:#fff;
+    --offwhite:#FAF9F6;
+    --black:#000;
+    --gray:#D3D3D3;
+    --test1:#C8A2C8;
+    --test2:#00FFFF;
+    --test3:#66ff00;
+    --test4:#FF5C00;
+    --clear:transparent;
+}
+
+/* Body Info */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 1)), url("pexels-pixabay-270366.webp");
+    font-family: "Lexend", sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    color: var(--offwhite);
+    text-align: center;
+}
+
+/* lets the page fit screen sizes */
+.wrapper-head{
+    line-height: 1em;
+    margin: auto;
+    text-align: center;
+    width: 98%;
+}
+
+/* Header 1 Info */
+h1 {
+    padding-top: .5em;
+    word-spacing: -.15em;
+    font-size: 5.5em;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Header 2 Info */
+h2{
+    line-height: 1em;
+    font-size: 1.5em;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.disclaimer p{
+    padding-top: 25px;
+}
+
+.typewrite{
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.button_intro{
+    padding-top: 25px;
+}
+
+.button_intro a{
+    border: solid var(--offwhite) 2px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: var(--offwhite);
+    border-radius: 15px;
+    padding: 16px 64px;
+}
+
+.button_intro a:hover{
+    color: black;
+    background-color: white;
+}
+
+.footer{
+    font-size: .75em;
+    line-height: 0em;
+    color: var(--gray);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
+}
+
+/* -- Break points. This lets different devices see the page without any issues -- */
+/* Extra small devices (phones, 600px and down to 320px) */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 3em;
+        line-height: 1em;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+    }
+    h2{
+        font-size: 1.5em;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+    body{
+        background-size: 700%;
+        background-position: center;
+    }
+    .footer{
+        font-size: .5em;
+        line-height: 1em;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 3em;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+    }
+    h2{
+        font-size: .92em;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+    body{
+        background-size: 300%;
+        background-position: center;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 4em;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+    }
+    h2{
+        font-size: 1.23em;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+    body{
+        background-size: 250%;
+        background-position: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 5em;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+    }
+    h2{
+        font-size: 1.54em;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+    body{
+        background-size: 200%;
+        background-position: center;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200 and up) */
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 6.5em;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+    }
+    h2{
+        font-size: 2em;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+    body{
+        background-size: 175%;
+        background-position: center;
+    }
+
+}

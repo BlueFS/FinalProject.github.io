@@ -1,0 +1,25 @@
+-- Header --
+Open website
+See who created site
+--Body--
+Say reason why this site was created
+    Learn some code
+        The site will talk about binary
+        The site will talk about HTML and CSS (used for this website)
+        Talk about advancements in tech
+    Learn how to code
+        Prompt users to input values to change the way the website appears
+            Prompt user to change the actual code
+        Give more advice to continue learning code
+    Learn how to fix issues
+        Rubber Duck Debugging
+        AI
+        Etc
+    Learn how to use the web
+        Give statistics on how many people know how the web works and how to use it
+        The site will prompt users to move forward by changing the URL
+--Ending--
+Conclude with a thank you and whatnot
+Layout starts with a relatively hard website but then advances into a simple website
+
+

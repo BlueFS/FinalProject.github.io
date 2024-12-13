@@ -1,0 +1,367 @@
+/* Styles and colors */
+:root {
+    --white:#fff;
+    --offwhite:#FAF9F6;
+    --black:#000;
+    --gray:#D3D3D3;
+    --test1:#C8A2C8;
+    --test2:#00FFFF;
+    --test3:#66ff00;
+    --test4:#FF5C00;
+    --clear:transparent;
+    --text: #000;
+    --bg: #FAF9F6;
+}
+
+/* Body Info */
+
+body {
+    font-family: "Lexend", sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    text-align: center;
+}
+
+h1 {
+  padding-top: .5em;
+  line-height: 0em;
+  word-spacing: -.15em;
+  font-size: 5.5em;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  animation: fadeInh2 10s;
+}
+
+h1{
+   animation: fadeInh1 1s;
+}
+
+@keyframes fadeInh1 {
+  0% { opacity: 0; }
+  25% {opacity: 1;}
+}
+
+h2{
+  animation: fadeInh2 1s;
+  font-size: 3.5em;
+}
+
+@keyframes fadeInh2{
+  0% { opacity: 0;}
+  50% { opacity: 0;}
+  75% { opacity: 1;}
+}
+
+.info{
+  justify-content: center;
+  align-items: center;
+  margin: 5 auto 25;
+  width: 90%;
+  animation: fadeInul 1s;
+}
+
+.text{
+  min-height: 55vh;
+}
+
+@keyframes fadeInul {
+  0% { opacity: 0; }
+  25% {opacity: 0;}
+  50% {opacity: 1;}
+}
+
+.info p{
+  font-size: 1.25em;
+}
+
+.info img{
+  max-width: 45vw;
+  float: left;
+  margin-right: 20px;
+}
+
+.Code_Example{
+  align-items: center;
+  justify-content: center;
+  width: 75vw;
+  animation: fadeInul 1s;
+}
+
+.text p{
+  padding: 5px;
+  text-align: left;
+}
+
+.info a{
+  color: var(--text);
+  transition: ease .5s;
+}
+.info a:hover{
+  font-weight: bold;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+.description_table{
+  min-width: 320px;
+  margin: auto;
+  border: 3px solid var(--text);
+  color: var(--text);
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.75em;
+}
+
+.description_table .left-align{
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+td{
+ border: 1px solid black;
+ color: black;
+ align-items: center;
+ padding-left: 10px;
+ padding-right: 10px;
+ background-color: var(--offwhite);
+}
+td img{
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align:middle;
+}
+.info .scratch_link{
+  color: black;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-back{
+  word-spacing: 0em;
+  padding-bottom: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  animation: fadeInFooter 1s;
+}
+
+@keyframes fadeInFooter{
+  0% {opacity: 0}
+  95% {opacity: 0}
+  100% {opacity: 1}
+}
+
+/* The next and back links */
+nav a{
+  text-decoration: none;
+  color: var(--text);
+  padding: 0 2px;
+  margin: 0 30px;
+  position: relative;
+  font-size: 1.25em;
+}
+
+nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -2px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0%;
+  position: absolute;
+  background: var(--text);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav a:hover:after{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text);
+}
+
+@keyframes fadeInul {
+  0% { opacity: 0; }
+  80% {opacity: 0;}
+  100% { opacity: 1; }
+}
+
+li {
+  position: relative;
+  font-size: 1em;
+}
+
+li a{
+  color: var(--text);
+  text-decoration: none;
+}
+
+li::after{
+  content: '';
+  position: absolute;
+  color: var(--text);
+  height: 3px;
+  bottom: -3px;
+  width: 0%;
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+li:hover::after{
+  content: '';
+  position: absolute;
+  background-color: var(--offwhite);
+  height: 3px;
+  bottom: -3px;
+  width: 100%;
+  left: 0;
+}
+
+.footer{
+  font-size: .75em;
+  line-height: 0em;
+  color: var(--text);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  animation: fadeIn 10s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  80% {opacity: 0;}
+  100% { opacity: 1; }
+}
+
+/* style.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #FAF9F6;
+    --bg: #000;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-a.adaptive {
+      background: black;
+      color: var(--offwhite);
+      outline: 5px dashed #000;
+    }
+  }
+
+ /* -- Break points. This lets different devices see the page without any issues -- */
+/* Extra small devices (phones, 600px and down to 320px) */
+@media only screen and (max-width: 600px) {
+  h1 {
+      font-size: 3em;
+      line-height: 1em;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+  }
+  h2{
+      font-size: 1.5em;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1 {
+      font-size: 3em;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+  }
+  h2{
+      font-size: .92em;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  h1 {
+      font-size: 4em;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+  }
+  h2{
+      font-size: 1.23em;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1 {
+      font-size: 5em;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+  }
+  h2{
+      font-size: 1.54em;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200 and up) */
+@media only screen and (min-width: 1200px) {
+  h1 {
+      font-size: 6.5em;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+  }
+  h2{
+      font-size: 2em;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+  }
+
+}
